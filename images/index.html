@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Imam Pirdaus</title>
+
+    <link rel="stylesheet" href="css/reset-font.css" media="screen">
+    <link rel="stylesheet" href="css/screen.css" media="screen">
+
+    <script type="text/javascript" src= "jquery/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#tab1').fadeIn('slow'); //tab pertama ditampilkan
+            $('ul#nav li a').click(function() { //jika link di tab di klik
+                $('ul#nav li a').removeClass('active'); //menghilangkan class active (yang tampil)
+                $(this).addClass("active"); // menambahkan class active pada link yang diklik
+                $('.tab_konten').hide(); // menutup semua konten tab
+                var aktif = $(this).attr('href') // mencari mana tab yang harus ditampilkan
+                $(aktif).fadeIn('slow'); // tab yang dipilih, ditampilkan
+                return false;
+            })
+        });
+    </script>
+
+</head>
+
+
+
+<?php session_start(); ?>
+
+<?php
+if (isset($_POST['cek'])){ // JIKA SUBMIT CEK DIJALANKAN
+    if($_SESSION['captcha']==$_POST['captcha']){ // JIKA CAPTCHA YG DITULIS SM DGN YG DITAMPILKAN MAKA
+		echo "<script>alert('Berhasil! Kode CAPTCHA Valid!')</script>";
+    }else{
+		echo "<script>alert('Kode CAPTCHA Tidak Valid!')</script>";
+    }
+}
+?>
+
+
+
+<body>
+<div id="container">
+  <h1>Imam Pirdaus</h1>
+  <h5>Programmer</h5>
+  <ul id="nav">
+    <li><a href="#tab1" class="active">ABOUT</a></li>
+    <li><a href="#tab2">SKILLS</a></li>
+    <li><a href="#tab3">EXPERINCE</a></li>
+    <li><a href="#tab4">EDUCATION</a></li>
+    <li><a href="#tab5">CONTACT</a></li>
+	<li><a href="#tab6">JOB OFFER</a></li>
+  </ul>
+
+  <div class="clear"></div>
+
+  <div id="konten">
+  
+  
+    <div style="display:none;" id="tab1" class="tab_konten">
+      <h2></h2>
+      <img src="images/IMAM.jpg" class="img1">
+
+      <table id="isi_konten">
+        <tr>
+          <td><label>Nama</label></td>
+          <td>:</td>
+          <td><label>Imam Pirdaus</label></td>
+        </tr>
+        <br>
+        <tr>
+          <td><label>Tempat Lahir</label></td>
+          <td>:</td>
+          <td><label>Bekasi</label></td>
+        </tr>
+        <br>
+        <tr>
+          <td><label>Tanggal Lahir</label></td>
+          <td>:</td>
+          <td><label>12 Desember 1995</label></td>
+        </tr>
+        <br>
+        <tr>
+          <td><label>Alamat</label></td>
+          <td>:</td>
+          <td><label>Bekasi Indonesia</label></td>
+        </tr>
+      </table>
+    </div>
+
+<!-- batas -->
+    <div style="display:none;" id="tab2" class="tab_konten">
+		<img src="images/SKIL.png" class="img2">
+	</div>
+<!-- batas -->
+    <div style="display:none;" id="tab3" class="tab_konten">
+	<table id="isi_konten3">
+		<tr>
+			<td><img src="images/asdp.png" class="img3"></td>
+		</tr>
+		
+		<tr>
+			<td><img src="images/ras.png" class="img3"></td>
+		</tr>
+	</table>
+	<table id="isi_konten4">
+		<tr>
+			<td>
+			<ul>
+				<p>JAVA PROGRAMING    2015</p>
+				<p>PT. ASDP Indonesia Ferry</p>
+				<p>Analisa, Perancangan dan pembuatan</p>
+				<p>project tunjangan karyawan.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<ul>
+				<p>WEB PROGRAMING    2016</p>
+				<p>RAS Foundation</p>
+				<p>Pembuatan dan pengembangan</p>
+				<p>web.</p>
+			</td>
+		</tr>
+	</table>
+    </div>
+<!-- batas -->
+    <div style="display:none;" id="tab4" class="tab_konten">
+		<img src="images/bsi.png" class="img4" />
+		<div id="text1">
+			<p>Bina Sarana Informatika</p>
+			<p>Manajemen Informatika D3 2016</p>
+			<p></p>
+		</div>
+    </div>
+	
+<!-- batas -->
+	<div style="display:none;" id="tab5" class="tab_konten">
+		<table id="isi_konten5">
+			<tr>
+				<td><img src="images/email.png" class="img5"></img></td>
+				<td><a href="http://namasayaimam@gmail.com">namasayaimam@gmail.com</a></td>
+			</tr>
+			<tr>
+				<td><img src="images/telpon.png" class="img5"></img></td>
+				<td><p>+62 838 9988 9896</p></td>
+			</tr>
+			<tr>
+				<td><img src="images/linkedin.png" class="img5"></img></td>
+				<td><a href="https://id.linkedin.com/in/imampirdaus">Imam Pirdaus</a></td>
+			</tr>
+		</table>
+    </div>
+<!-- batas -->
+	<div style="display:none;" id="tab6" class="tab_konten">
+	
+	<table id="isi_konten6">
+		<tr>
+			<td><label for="nama">Name</label></td>
+			<td>: </td>
+			<td><input type="text" size="30" name="nama" id="nama"></input></td>
+		</tr>
+		<tr>
+			<td><label for="email">Email</label></td>
+			<td>: </td>
+			<td><input type="text" size="30" name="nama" id="email"></input></td>
+		</tr>
+		<tr>
+			<td><label for="penjelasan">Description of work</label></td>
+			<td>: </td>
+			<td><textarea name="penjelasan" id="penjelasan" rows="3" cols="30"></textarea></td>
+		</tr>
+		<tr>
+			<td><label for="salary">Salary</label></td>
+			<td>: </td>
+			<td><input type="text" size="6" name="salary" id="salary"></input> <label>$</label></td>
+			
+		</tr>
+	<form method="post">
+		Kode Captcha : <img src="captcha.php" /><br />
+		<input type="text" name="captcha" maxlength="6" /><br />
+		<input type="submit" name="cek" value="CEK"/>
+	</form>
+	</table>
+
+    </div>
+<!-- batas -->
+
+  </div>
+
+  <div id="footer"></div>
+</div>
+</body>
+
+</html>
+
+				

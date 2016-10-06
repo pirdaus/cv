@@ -1,0 +1,183 @@
+/* ------------------------------
+Struktur Halaman
+
+	Imam Pirdaus
+	namasayaimam@gmail.com
+	
+------------------------------ */
+textarea { 
+resize:none;
+}
+body{
+	color:#696969; /* warna font pada body */
+	background:#E5E5E5; /* warna latar belakang*/
+}
+#container {
+	margin:auto;
+	margin-top:60px;
+	width:700px;
+	display:block;
+	background-color:#E5E5E5;
+}
+div.clear{
+	clear:both;
+}
+h1{
+	font-size:2.9em;
+	color:#494949;
+}
+h5{
+	font-size:1.9em;
+}
+a{
+	color:#29b8f3;
+	text-decoration:none;
+}
+a:hover{
+	color:#304153;
+}
+#footer{
+	padding:5px 20px;
+	text-align:right;
+}
+/* ------------------------------
+Konten = Tabs + Konten Tab
+------------------------------ */
+#konten{
+	padding:20px;
+	background:#FFF;
+	color:#555;
+	height: 320px;
+}
+#konten p{
+	text-indent:15px;
+	line-height:165%;
+}
+/* ------------------------------
+Navigasi Tabs
+------------------------------ */
+ul#nav {
+	padding:40px 5px 10px 50px;
+}
+ul#nav li{
+	display:inline;
+	float:left;
+	position:relative;
+	margin-right:2px;
+}
+ul#nav li a{
+	background:#a5a5a5;
+	padding:16px 14px;
+	color:#FFF;
+	text-decoration:none;
+	font-weight:bold;display: block;
+}
+ul#nav li a:hover{
+	background:#304153;
+}
+ul#nav li a.active, ul#nav li a.active:hover{
+	background:#FFF;
+	color:#555;
+}
+
+
+.img1{
+	width: 195px;
+	height: 250px;
+	border:5px solid #fff;
+	margin-top: 40px;
+	margin-left:35px;
+	float: left;
+}
+.img2{
+	width: 673px;
+	height: 160px;
+	float: left;
+	margin-top: 80px;
+}
+.img3{
+	width: 150px;
+	height: 90px;
+	float: left;
+	margin-top: 50px;
+}
+.img4{
+	width: 170px;
+	height: 170px;
+	float: left;
+	margin-top: 50px;
+	margin-left:80px;
+}
+.img5{
+	width: 70px;
+	height: 70px;
+}
+#isi_konten{
+	margin-top:130px;
+	margin-left:310px;
+}
+#isi_konten td{
+	padding-right:20px;
+	padding-bottom:5px;
+}
+#isi_konten td label{
+	font: 15pt 'Brush Script Std';
+}
+#isi_konten3 {
+	float:left;
+	width:225px;
+	height:20px;
+	margin-left:80px;
+}
+
+#isi_konten4 {
+	float:right;
+	width:355px;
+	height:300px;
+	margin-top:35px;
+	font: 13pt 'Brush Script Std';
+}
+
+#text1{
+	margin-top:85px;
+	margin-left:50px;
+	font: 15pt 'Brush Script Std'; 
+	float:left;
+}
+
+
+#isi_konten6 {
+	margin-top:20px;
+	margin-left:90px;
+
+	font: 12pt 'Brush Script Std';
+}
+#isi_konten6 td{
+	padding:5px;
+	padding-right:10px;
+}
+#isi_konten5 a{
+	float:left;
+    margin:31px;
+	font: 18pt 'Brush Script Std';
+}
+#isi_konten5 p{
+	float:left;
+    margin:31px;
+	font: 18pt 'Brush Script Std';
+}
+
+#isi_konten5 img {
+
+	float:left;
+	margin:5px;
+	
+}
+#tab5{
+	padding-left:120px;
+	padding-top:10px;
+	
+}
+
+
+
